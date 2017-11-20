@@ -1,4 +1,4 @@
-@lombok.experimental.Builder @lombok.experimental.Accessors(prefix = {"p", "_"}) class BuilderWithAccessors {
+@lombok.Builder @lombok.experimental.Accessors(prefix = {"p", "_"}) class BuilderWithAccessors {
   public static @java.lang.SuppressWarnings("all") @javax.annotation.Generated("lombok") class BuilderWithAccessorsBuilder {
     private @java.lang.SuppressWarnings("all") @javax.annotation.Generated("lombok") int plower;
     private @java.lang.SuppressWarnings("all") @javax.annotation.Generated("lombok") int upper;
@@ -34,7 +34,7 @@
   private final int pUpper;
   private int _foo;
   private int __bar;
-  @java.lang.SuppressWarnings("all") @javax.annotation.Generated("lombok") BuilderWithAccessors(final int plower, final int upper, final int foo, final int _bar) {
+  @java.beans.ConstructorProperties({"plower", "upper", "foo", "_bar"}) @java.lang.SuppressWarnings("all") @javax.annotation.Generated("lombok") BuilderWithAccessors(final int plower, final int upper, final int foo, final int _bar) {
     super();
     this.plower = plower;
     this.pUpper = upper;
